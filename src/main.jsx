@@ -6,12 +6,9 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
-import { GLOBAL_CSS } from "./theme";
 
 // Inyecta @font-face, .emo-btn, keyframes, etc. una sola vez al cargar la app.
-const styleTag = document.createElement("style");
-styleTag.textContent = GLOBAL_CSS;
-document.head.appendChild(styleTag);
+
 
 createRoot(document.getElementById("root")).render(<App />);
 
